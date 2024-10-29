@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+
+body{
+background-color: rgb(145, 139, 221) ;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.title {
+width: 100%;
+color: rgba(255, 255, 255, 0.619);
+text-align: center;
+margin: 0;
+padding: 0;
+background-image: url('back.png');
+background-size: cover;
+background-position: center;
+font-size: 150px;
+font-style: italic;
+font-variant: small-caps;
+}
+
+.navbar {
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+background-color: #6e3df6;
+}
+
+.navbar div {
+margin: 0;
+padding: 10px;
+}
+
+.navbar div a {
+display: flex;
+margin: 0;
+text-decoration: none;
+color: white;
+}
+
+.logo {
+  position: relative;
+  height: 40px;
+}
+
+.txt{
+color: white;
+font-size: 150%;
+}
+
+a{
+color: white;
+}
+
+.conteiner{
+  display: flex;
+  justify-content: space-evenly; /* Распределяет пространство между колонками */
+  padding: 0px; /* Отступы вокруг контейнера */
+}
+
+.column{
+  border-radius: 8px;
+  background-color: #f0f0f0; /* Цвет фона для колонок */
+  padding: 20px; /* Внутренние отступы для колонок */
+  margin: 10px; /* Внешние отступы между колонками */
+  width: 300px; /* Фиксированная ширина колонок */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для колонок */
+}
+
+.left {
+  text-align: center;
+  background-color: #6e3df6a9; /* Цвет фона для левой колонки */
+}
+
+.center {
+  text-align: center;
+  background-color: #6e3df6a9; /* Цвет фона для центральной колонки */
+}
+
+.right {
+  background-color: #6e3df6a9; /* Цвет фона для правой колонки */
+}
+th,td{
+  border-bottom:1px solid white ;
+}
+tr{
+  text-align: center;
+}
+a{
+    color: #b39bf6;
+  }
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+  body{
+    font-size: 80%;
+  }
+
+  .title {
+    font-size:60px; /* Уменьшаем размер заголовка */
+  }
+  .txt {
+    font-size: 70%; /* Уменьшаем размер текста в навигации */
+  }
+  .logo {
+    height: 15px;
+  }
+
+  .conteiner {
+    margin: 0 2%;
+    flex-direction: column; /* Изменяем направление на колонны */
+    align-items: center; /* Центрируем колонки */
+  }
+
+  .column {
+    width: 90%; /* Увеличиваем ширину колонок на мобильных устройствах */
+  }
+  .left{
+    text-align: center;
+  }
+  .right{
+    text-align: center;
+  }
+  
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 class="title">Mbapplo</h1>
+</header>
+
+<nav class="navbar">
+  
+    <div class="txt"><a href="index_sou.html">Соцсети</a></div>
+    <div class="txt" ><a href="index_stat.html" >Статистика</a></div>
+    <div class="txt"><a href="">Матчи</a></div>
+    <div ><img class="logo" src="MB.png" alt="Логотип клуба"></div>
+    <div class="txt"><a href="">Игроки</a></div>
+    <div class="txt"><a href="">Галерея</a></div>
+    <div class="txt"><a href="">Новости</a></div>
+  
+  
+</nav>
+<div class="conteiner">
+  <div class="column left">
+    <table>
+      <tr>
+        <th>Имя</th>
+        <th>Кол-во матчей</th>
+        <th>Голы</th>
+        <th>Голевые передачи</th>
+    </tr>
+    <tr>
+      <td>Цирихов Заур</td>
+      <td>16</td>
+      <td>24</td>
+      <td>15</td>
+    </tr>
+    <tr>
+        <td>Руденко Владислав</td>
+        <td>16</td>
+        <td>18</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>Асланиди Георгий</td>
+        <td>11</td>
+        <td>24</td>
+        <td>15</td>
+    </tr>
+    </table>
+  </div>
+  <div class="column center">
+    <h3> 🖥 Mbapplo News 📰</h3>
+    <br>
+
+🔴 Сиукаев Станислав и Гогаев Артур идут на поправку и скоро будут доступны к матчам. 🩼<br>
+
+🔴 Сегодня на ГТО  Царитов Зорик забрал: 2 -🥇и 3 -🥈. А  Кадзаев Артур 5 из 5🥇. <br>
+
+🟣Поздравим парней в комментариях 📝<br>
+
+🔴 На следующей неделе наша команда собирается предложить матч-реванш FC"Argon" формата 11×11. <br>
+
+🔴 Предположительно перед следующим матчем будет презентация нашего вратарского комплекта 🧤 <br>
+
+* возможно новостной пост будет обновлён <br>
+
+❓Если у вас есть вопросы, то вы их можете задать, перейдя по ссылке ниже ⬇️ <br>
+
+<a href="http://t.me/anonquebot?start=yu89hd"> http://t.me/anonquebot?start=yu89hd</a> 
+<br> <br>
+#mbapplonews
+  </div>
+  <div class="column right">
+    Ефы фывфы
+    фывфыв
+    фывфыфыв
+    фывфыфывфыв
+    фывфыфывфывв
+    фывфыфыввфы
+    вфы
+    вфыфы
+    фывфыфыввфы
+    фывфыфыввфыф
+    ыв
+  </div>
+</div>
+</body>
+</html>
+
