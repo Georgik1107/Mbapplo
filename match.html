@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание матчей клуба Mbapplo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(162,162,208);
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .match {
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            color: #fff; /* Цвет текста для лучшей читабельности */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для блоков */
+            transition: box-shadow 0.3s; /* Плавный переход при наведении */
+            display: flex; /* Используем flexbox для выравнивания */
+            justify-content: space-between; /* Распределяем пространство между элементами */
+            align-items: center; /* Центрируем элементы по вертикали */
+        }
+        .match:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
+        }
+        .win {
+            background-color: rgb(168,228,160); /* Зелёный для выигрыша */
+        }
+        .loss {
+            background-color: rgb(228,113,122); /* Красный для поражения */
+        }
+        .date {
+            font-weight: bold;
+        }
+        .result {
+            font-size: 24px; /* Увеличиваем размер шрифта для счёта */
+            margin-left: auto; /* Отодвигаем счёт вправо */
+            color: #fff; /* Цвет текста для результатов */
+        }
+        .opponent{
+            margin-left: 5px;
+        }
+
+
+        .title {
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.619);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-image: url('back.png');
+        background-size: cover;
+        background-position: center;
+        font-size: 150px;
+        font-style: italic;
+        font-variant: small-caps;
+        }
+        .title_a{
+            text-decoration: none;
+        }
+        .navbar {
+        margin: 0px;
+        font-size: 40px;
+        padding: 4px;
+        color: white;
+        background-color: #6e3df6;
+        text-align: center;
+        }
+
+        /* Адаптивные стили */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .match {
+                padding: 10px;
+                flex-direction: column; /* На мобильных устройствах меняем направление на колонку */
+                align-items: flex-start; /* Выравниваем элементы по левому краю */
+            }
+            .result {
+                font-size: 20px; /* Уменьшаем размер шрифта для мобильных */
+                margin-left: 0; /* Убираем отступ слева */
+                margin-top: 5px; /* Добавляем отступ сверху */
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .date {
+                font-size: 16px;
+            }
+            .opponent {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a class="title_a" href="menu.html"><h1 class="title">Mbapplo</h1></a>
+      </header>
+    <h1 class="navbar">Матчи</h1>
+    <div class="conteiner">
+
+    <div class="match loss">
+        <div class="date">08.10.2023</div>
+        <div class="opponent">Соперник: Царазон</div>
+        <div class="result">Счёт: 5 - 8</div>
+    </div>
+
+    <div class="match win">
+        <div class="date">22.10.2023</div>
+        <div class="opponent">Соперник: Pride</div>
+        <div class="result">Счёт: 14 - 9</div>
+    </div>
+
+    <div class="match loss">
+        <div class="date">29.10.2023</div>
+        <div class="opponent">Соперник: Царазон</div>
+        <div class="result">Счёт: 9 - 11</div>
+    </div>
+
+    <div class="match loss">
+        <div class="date">12.11.2023</div>
+        <div class="opponent">Соперник: Escobar</div>
+        <div class="result">Счёт: 6 - 10</div>
+    </div>
+
+    <div class="match win">
+        <div class="date">19.11.2023</div>
+        <div class="opponent">Соперник: Иристон</div>
+        <div class="result">Счёт: 3 - 0</div>
+    </div>
+
+    <div class="match loss">
+        <div class="date">27.11.2023</div>
+        <div class="opponent">Соперник: Era</div>
+        <div class="result">Счёт: 10 - 13</div>
+    </div>
+
+    <div class="match win">
+        <div class="date">17.12.2023</div>
+        <div class="opponent">Соперник: Ирон</div>
+        <div class="result">Счёт: 18 - 6</div>
+    </div>
+
+    <div class="match win">
+        <div class="date">30.12.2023</div>
+        <div class="opponent">Соперник: Осетинские джибуры</div>
+        <div class="result">Счёт: 9 - 4</div>
+    </div>
+
+    <div class="match win">
+        <div class="date">02.01.2024</div>
+        <div class="opponent">Соперник: Freedom</div>
+        <div class="result">Счёт: 10 - 7</div>
+    </div>
+
+    <div class="match win">
+        <div class="date">04.01.2024</div>
+        <div class="opponent">Соперник: Washington</div>
+        <div class="result">Счёт: 18 - 11</div>
+    </div>
+
+    <div class="match loss">
+        <div class="date">21.01.2024</div>
+        <div class="opponent">Соперник: RRK</div>
+        <div class="result">Счёт: 6 - 11</div>
+    </div>
+
+    <div class="match win">
+        <div class="date">09.03.2024</div>
+        <div class="opponent">Соперник: Урожай </div>
+        <div class="result">Счёт: 8 - 6</div>
+    </div>
+
+
+</body>
+</html>
